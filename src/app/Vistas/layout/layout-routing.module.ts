@@ -8,8 +8,8 @@ import { LayoutComponent } from './layout.component';
 // import { ProductoComponent } from './Paginas/producto/producto.component';
 // import { ReporteComponent } from './Paginas/reporte/reporte.component';
 // import { VentaComponent } from './Paginas/venta/venta.component';
-// import { ContactenosComponent } from './Paginas/contactenos/contactenos.component';
-// import { TerminosYCondicionesComponent } from './Paginas/terminosycondiciones/terminosycondiciones.component';
+ import { ContactenosComponent } from './Paginas/contactenos/contactenos.component';
+ import { TerminosYCondicionesComponent } from './Paginas/terminosycondiciones/terminosycondiciones.component';
 
 const routes: Routes = [
   {
@@ -17,8 +17,8 @@ const routes: Routes = [
     component: LayoutComponent, 
     children: [
       // {path:'dashboard',component:DashboardComponent},
-      // {path:'contactenos',component:ContactenosComponent},
-      // {path:'terminosycondiciones',component:TerminosYCondicionesComponent},
+       {path:'contactenos',component:ContactenosComponent},
+       {path:'terminosycondiciones',component:TerminosYCondicionesComponent},
       // {path:'usuarios',component:UsuarioComponent},
       // {path:'productos',component:ProductoComponent},
       // {path:'ventas',component:VentaComponent},

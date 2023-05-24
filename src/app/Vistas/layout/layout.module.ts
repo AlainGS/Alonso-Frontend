@@ -23,8 +23,8 @@ import { NavigationComponent } from './Paginas/navigation/navigation.component';
 import { SidenavComponent } from './Paginas/sidenav/sidenav.component';
 import { SublevelMenuComponent } from './Paginas/sidenav/sublevel-menu.component';
 import { BodyComponent } from './Paginas/body/body.component';
-// import { ContactenosComponent } from './Paginas/contactenos/contactenos.component';
-// import { TerminosYCondicionesComponent } from './Paginas/terminosycondiciones/terminosycondiciones.component';
+ import { ContactenosComponent } from './Paginas/contactenos/contactenos.component';
+ import { TerminosYCondicionesComponent } from './Paginas/terminosycondiciones/terminosycondiciones.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +36,8 @@ import { BodyComponent } from './Paginas/body/body.component';
     // VentaComponent,
     // HistorialVentaComponent,
     // ReporteComponent,
-    // ContactenosComponent,
-    // TerminosYCondicionesComponent,
+     ContactenosComponent,
+     TerminosYCondicionesComponent,
 
     // ModalUsuarioComponent,
     // ModalProductoComponent,
