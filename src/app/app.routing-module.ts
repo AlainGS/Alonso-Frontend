@@ -7,6 +7,7 @@ const routes: Routes = [
 
   //{ path: 'login', component: LoginComponent, pathMatch: 'full' },
 
+  
   { path: '', loadChildren: () => import('./Vistas/layout/layout.module').then(mod => mod.LayoutModule) },
 
   { path:'**', redirectTo: 'login',pathMatch:'full'}
