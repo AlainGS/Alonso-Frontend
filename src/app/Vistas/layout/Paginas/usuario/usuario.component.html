@@ -1,0 +1,94 @@
+<h1 style="margin:20px 0px 0px 40px">Usuarios</h1>
+<mat-card style="margin: 20px 20px 20px 40px">
+
+  <mat-card-header style="padding: 10px 10px 10px 10px">
+    <button mat-raised-button color="primary" type="button" (click)="nuevoUsuario()">
+      <mat-icon mat-list-icon>add</mat-icon>
+      Nuevo Usuario
+    </button>
+  </mat-card-header>
+  
+  <mat-divider></mat-divider>
+
+  <mat-card-content class="dashboard-card-content" style="padding: 10px 10px 10px 10px" >
+
+    <mat-form-field appearance="outline">
+      <mat-label>Buscar Usuario</mat-label>
+      <input type="text" 
+             matInput 
+             (keyup)="aplicarFiltroTabla($event)" 
+             placeholder="Filtrado Rápido" 
+             aria-label="Number"
+             #input/>
+    </mat-form-field>
+
+    <div class="mat-elevation-z8 table-container">
+      <table mat-table [dataSource]="dataListaUsuario">
+
+        <ng-container matColumnDef="nro" >
+          <th mat-header-cell *matHeaderCellDef>N°</th>
+          <td mat-cell *matCellDef="let element">{{element.nro}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="usuarioNombre">
+          <th mat-header-cell *matHeaderCellDef >Nombre Completo</th>
+          <td mat-cell *matCellDef="let element">{{element.usuarioNombre}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="usuarioCorreo">
+          <th mat-header-cell *matHeaderCellDef >Correo</th>
+          <td mat-cell *matCellDef="let element">{{element.usuarioCorreo}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="rolNombre">
+          <th mat-header-cell *matHeaderCellDef >Rol</th>
+          <td mat-cell *matCellDef="let element">{{element.rolNombre}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="usuarioEstado">
+          <th mat-header-cell *matHeaderCellDef >Estado</th>
+          <td mat-cell *matCellDef="let element">{{element.usuarioEstado == 1 ? 'Activo' : 'No Activo'}} </td>
+        </ng-container>
+
+        <mat-card-actions>
+        <ng-container matColumnDef="acciones">
+          <th mat-header-cell mat-row *matHeaderCellDef>Acciones</th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button color="primary" (click)="editarUsuario(element)" matTooltip="Editar Registro" type="button" >
+              <mat-icon>edit</mat-icon>
+            </button>&nbsp;
+            <button mat-icon-button color="warn" (click)="eliminarUsuario(element)" matTooltip="Eliminar Registro" type="button" >
+              <mat-icon>delete</mat-icon>
+            </button>&nbsp;
+          </td>
+        </ng-container>
+      </mat-card-actions>
+
+
+        <tr mat-header-row *matHeaderRowDef="columnasTabla"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnasTabla;"></tr>
+
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="6" align="center">No se encontraron datos ...</td>
+          <!-- <td class="mat-cell" colspan="4" align="center">No se encontraron datos para "{{input.value}}"</td> -->
+        </tr>
+      </table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                     showFirstLastButtons>
+                     <!-- aria-label="Select page of periodic elements"> -->
+      </mat-paginator>
+      &nbsp;
+
+    </div>
+
+    &nbsp;
+
+  </mat-card-content>
+
+  <mat-card-footer>
+    <!-- <mat-progress-bar value="100" mode="determinate"></mat-progress-bar> -->
+    <mat-progress-bar mode="indeterminate" *ngIf="mostrarLoading"></mat-progress-bar>
+  </mat-card-footer>
+
+</mat-card>

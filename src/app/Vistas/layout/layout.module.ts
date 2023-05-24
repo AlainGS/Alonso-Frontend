@@ -6,7 +6,7 @@ import { LayoutComponent } from './layout.component';
 import { LayoutRoutingModule } from '../layout/layout-routing.module';
 
 // import { DashboardComponent } from './Paginas/dash-board/dashboard.component';
-// import { UsuarioComponent } from './Paginas/usuario/usuario.component';
+import { UsuarioComponent } from './Paginas/usuario/usuario.component';
 // import { ProductoComponent } from './Paginas/producto/producto.component';
 // import { VentaComponent } from './Paginas/venta/venta.component';
 // import { HistorialVentaComponent } from './Paginas/historial-venta/historialventa.component';
@@ -15,9 +15,9 @@ import { LayoutRoutingModule } from '../layout/layout-routing.module';
 //nuevos
 import { CompartidosModule } from 'src/app/ZModulos/compartidos.module';
 
-// import { ModalUsuarioComponent } from './Modales/modal-usuario/modal-usuario.component';
-// import { ModalProductoComponent } from './Modales/modal-producto/modal-producto.component';
-// import { ModalDetalleVentaComponent } from './Modales/modal-detalle-venta/modal-detalle-venta.component';
+import { ModalUsuarioComponent } from './Modales/modal-usuario/modal-usuario.component';
+import { ModalProductoComponent } from './Modales/modal-producto/modal-producto.component';
+import { ModalDetalleVentaComponent } from './Modales/modal-detalle-venta/modal-detalle-venta.component';
 
 import { NavigationComponent } from './Paginas/navigation/navigation.component';
 import { SidenavComponent } from './Paginas/sidenav/sidenav.component';
@@ -31,7 +31,7 @@ import { BodyComponent } from './Paginas/body/body.component';
     LayoutComponent,
     
     // DashboardComponent,
-    // UsuarioComponent,
+     UsuarioComponent,
     // ProductoComponent,
     // VentaComponent,
     // HistorialVentaComponent,
@@ -39,9 +39,9 @@ import { BodyComponent } from './Paginas/body/body.component';
     // ContactenosComponent,
     // TerminosYCondicionesComponent,
 
-    // ModalUsuarioComponent,
-    // ModalProductoComponent,
-    // ModalDetalleVentaComponent,
+     ModalUsuarioComponent,
+     ModalProductoComponent,
+     ModalDetalleVentaComponent,
 
     NavigationComponent,
     SidenavComponent,

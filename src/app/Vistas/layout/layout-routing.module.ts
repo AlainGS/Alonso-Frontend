@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LayoutComponent } from './layout.component';
 // import { DashboardComponent } from './Paginas/dash-board/dashboard.component';
-// import { UsuarioComponent } from './Paginas/usuario/usuario.component';
+import { UsuarioComponent } from './Paginas/usuario/usuario.component';
 // import { HistorialVentaComponent } from './Paginas/historial-venta/historialventa.component';
 // import { ProductoComponent } from './Paginas/producto/producto.component';
 // import { ReporteComponent } from './Paginas/reporte/reporte.component';
@@ -19,7 +19,7 @@ const routes: Routes = [
       // {path:'dashboard',component:DashboardComponent},
       // {path:'contactenos',component:ContactenosComponent},
       // {path:'terminosycondiciones',component:TerminosYCondicionesComponent},
-      // {path:'usuarios',component:UsuarioComponent},
+      {path:'usuarios',component:UsuarioComponent},
       // {path:'productos',component:ProductoComponent},
       // {path:'ventas',component:VentaComponent},
       // {path:'historialdeventas',component:HistorialVentaComponent},

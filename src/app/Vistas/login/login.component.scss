@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+
+  //height: 100%;
+  min-height: 800px;
+  max-height: 800px;
+  
+  width: 50%;
+  min-width: 600px;
+  max-width: 600px !important;
+  
+  align-items: center;
+  //border: 1px solid black;
+  margin: auto;
+  //margin-top: 1%;
+}
+
+.loginCard {
+  display: flex;
+  flex-direction: column;
+  
+  // height: 100%;
+  // min-height: 100%;
+  // max-height:800px;
+  
+  // width: 100%;
+  // min-width: 450px;
+  // max-width:500px !important;
+  
+  margin:4em auto;
+  text-align:center;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.full-width {
+  width: 80%;
+}
+
+

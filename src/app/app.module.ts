@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //nuevos
-//import { LoginComponent } from '../app/Vistas/login/login.component';
+import { LoginComponent } from '../app/Vistas/login/login.component';
 import { CompartidosModule } from '../app/ZModulos/compartidos.module';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 
@@ -19,7 +19,7 @@ export const options: Partial<null | IConfig> | (() => Partial<IConfig>) = null;
     AppComponent,
 
     //nuevos
-    //LoginComponent
+    LoginComponent
     //NotFoundComponent
   ],
 
