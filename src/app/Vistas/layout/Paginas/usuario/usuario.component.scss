@@ -1,0 +1,60 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+//******
+/* Structure */
+// .container {
+//   position: relative;
+// }
+
+.table-container {
+  position: relative;
+  min-height: 200px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+
+// .example-loading-shade {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 56px;
+//   right: 0;
+//   background: rgba(0, 0, 0, 0.15);
+//   z-index: 1;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .example-rate-limit-reached {
+//   max-width: 360px;
+//   text-align: center;
+// }
+
+/* ANCHO DE COLUMNAS */
+.mat-column-nro {
+  max-width: 45px;
+}
+
+.mat-column-rolNombre {
+  max-width: 100px;
+  text-align: center;
+}
+
+.mat-column-usuarioEstado {
+  max-width: 60px;
+  text-align: center;
+}
+
+.mat-column-acciones {
+  max-width: 136px;
+  text-align: center;
+}
