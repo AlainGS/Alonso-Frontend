@@ -10,9 +10,15 @@ interface SideNavToggle {
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss']
 })
+<<<<<<< HEAD
 
 export class LayoutComponent{
   constructor( ) { }
+=======
+export class LayoutComponent{
+  constructor() { }
+
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
 
   title = 'sidenav-with-multilevel-menu';
 

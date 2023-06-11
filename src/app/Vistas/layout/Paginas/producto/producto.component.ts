@@ -5,8 +5,13 @@ import { MatPaginator, MatPaginatorIntl } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
 
 import { ModalProductoComponent } from '../../Modales/modal-producto/modal-producto.component';
+<<<<<<< HEAD
 import { Producto } from '../../../../Interfaces/producto.model';
 import { ProductoService } from '../../../../Servicios/producto.service';
+=======
+import { ProductoModel } from '../../../../Modelos/producto.model';
+import { ProductoService } from '../../../../Controladores/producto.service';
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
 import { UtilidadService } from 'src/app/ZModulos/utilidad.service';
 import Swal from 'sweetalert2';
 
@@ -27,7 +32,11 @@ export class ProductoComponent implements OnInit {
     'vencimiento',
     'acciones'];
 
+<<<<<<< HEAD
   dataInicio : Producto[] = [];  
+=======
+  dataInicio : ProductoModel[] = [];  
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
   dataListaProducto = new MatTableDataSource(this.dataInicio);
 
   @ViewChild(MatPaginator) paginacionTabla!: MatPaginator;
@@ -92,7 +101,11 @@ export class ProductoComponent implements OnInit {
     });
   }
 
+<<<<<<< HEAD
   editarProducto(editarRegistro: Producto) {
+=======
+  editarProducto(editarRegistro: ProductoModel) {
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
     const dialogRef = this.dialog.open(ModalProductoComponent, {
       disableClose: true,
       data: { editarRegistro }
@@ -104,7 +117,11 @@ export class ProductoComponent implements OnInit {
     });
   }
 
+<<<<<<< HEAD
   eliminarProducto(eliminarRegistro: Producto) {
+=======
+  eliminarProducto(eliminarRegistro: ProductoModel) {
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
 
     Swal.fire({
       title: "¿Desea eliminar el Producto?",

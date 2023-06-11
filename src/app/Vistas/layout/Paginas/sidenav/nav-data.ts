@@ -26,6 +26,7 @@ export const navbarData: INavbarData[] = [
         label: 'CONFIGURACIÓN',
         items: [
             {
+<<<<<<< HEAD
                 routeLink: 'categorias',
                 label: 'Categoria'
             },
@@ -38,6 +39,26 @@ export const navbarData: INavbarData[] = [
                 label: 'Usuario'
             },
             
+=======
+                routeLink: 'productos/level1.1',
+                label: 'Mantenedores',
+                items: [
+                    {
+                        routeLink: 'categoria',
+                        label: 'Categoria'
+                    },
+                    {
+                        routeLink: 'producto',
+                        label: 'Producto'
+                    },
+                    {
+                        routeLink: 'usuario',
+                        label: 'Usuario'
+                    },
+                    
+                ]
+            }
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
         ]       
     },
     {
@@ -70,6 +91,7 @@ export const navbarData: INavbarData[] = [
         //icon: 'fal fa-chart-bar',
         icon: 'fal fa-clipboard-list',
         label: 'REPORTES',
+<<<<<<< HEAD
         // items: [
         //     {
         //         routeLink: 'ventas',
@@ -91,6 +113,29 @@ export const navbarData: INavbarData[] = [
         //         label: 'Productos',
         //     }
         // ]
+=======
+        items: [
+            {
+                routeLink: 'ventas',
+                label: 'Ventas',
+                items: [
+                    {
+                        routeLink: 'productos/porfecha',
+                        label: 'Por Fechas',
+                    },
+                    {
+                        routeLink: 'productos/porcantidades',
+                        label: 'Por Cantidades',
+                    },
+                    
+                ]
+            },
+            {
+                routeLink: 'productos',
+                label: 'Productos',
+            }
+        ]
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
     },
     {
         routeLink: 'seguridad',

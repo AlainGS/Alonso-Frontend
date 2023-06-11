@@ -3,9 +3,12 @@ import { Component, Output, EventEmitter, OnInit, HostListener } from '@angular/
 import { Router } from '@angular/router';
 import { fadeInOut, INavbarData } from './helper';
 import { navbarData } from './nav-data';
+<<<<<<< HEAD
 import { Menu } from 'src/app/Interfaces/menu.model';
 import { MenuService } from 'src/app/Servicios/menu.service';
 import { UtilidadService } from 'src/app/ZModulos/utilidad.service';
+=======
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
 
 
 interface SideNavToggle {
@@ -39,10 +42,13 @@ export class SidenavComponent implements OnInit {
   navData = navbarData;
   multiple: boolean = false;
 
+<<<<<<< HEAD
   listaMenus: Menu[] = [];
   correoUsuario: string = "";
   rolUsuario: string = "";
 
+=======
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.screenWidth = window.innerWidth;
@@ -52,6 +58,7 @@ export class SidenavComponent implements OnInit {
     }
   }
 
+<<<<<<< HEAD
   constructor(
     public router: Router,
     private _menuServicio: MenuService,
@@ -74,6 +81,12 @@ export class SidenavComponent implements OnInit {
           error:(e) => {}
         })
       }
+=======
+  constructor(public router: Router) {}
+
+  ngOnInit(): void {
+      this.screenWidth = window.innerWidth;
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
   }
 
   toggleCollapse(): void {
@@ -114,9 +127,12 @@ export class SidenavComponent implements OnInit {
   //   this.closeSidenav();
   // }
 
+<<<<<<< HEAD
   cerrarSesion(){
     this._utilidadServicio.eliminarSesionUsuario();
     this.router.navigate(['login']);
   }
 
+=======
+>>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
 }
