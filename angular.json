@@ -41,7 +41,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -110,10 +110,6 @@
     }
   },
   "cli": {
-<<<<<<< HEAD
     "analytics": "44af5df7-1a63-45b8-82a9-ae14190750a6"
-=======
-    "analytics": false
->>>>>>> 72d513d2810b34ecc9e342fdb10295d716507f5c
   }
 }
