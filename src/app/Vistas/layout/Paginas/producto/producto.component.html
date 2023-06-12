@@ -24,7 +24,6 @@
 
         <ng-container matColumnDef="nro">
           <th mat-header-cell *matHeaderCellDef >#</th>
-<<<<<<< HEAD
           <!-- <td mat-cell *matCellDef="let element">{{element.nro}}</td> -->
           <td mat-cell 
             *matCellDef="let element" 
@@ -41,69 +40,45 @@
             [class.color-naranja]='element.productoStock < 5'
             [class.color-rojo]='element.productoStock == 0'
           >{{element.productoDescripcion}}</td>
-=======
-          <td mat-cell *matCellDef="let element">{{element.nro}}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="producto">
-          <th mat-header-cell *matHeaderCellDef>PRODUCTO</th>
-          <td mat-cell *matCellDef="let element"> {{element.productoDescripcion}}</td>
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
         </ng-container>
 
         <ng-container matColumnDef="categoria">
           <th mat-header-cell *matHeaderCellDef>CATEGORIA</th>
-<<<<<<< HEAD
           <!-- <td mat-cell *matCellDef="let element">{{element.categoriaDescripcion}}</td> -->
           <td mat-cell 
             *matCellDef="let element" 
             [class.color-naranja]='element.productoStock < 5'
             [class.color-rojo]='element.productoStock == 0'
           >{{element.categoriaDescripcion}}</td>
-=======
-          <td mat-cell *matCellDef="let element">{{element.categoriaDescripcion}}</td>
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
         </ng-container>
 
         <ng-container matColumnDef="stock">
           <th mat-header-cell *matHeaderCellDef>STOCK</th>
-<<<<<<< HEAD
           <td mat-cell 
             *matCellDef="let element" 
             [class.color-naranja]='element.productoStock < 5'
             [class.color-rojo]='element.productoStock == 0'
           >{{element.productoStock}}</td>
-=======
-          <td mat-cell *matCellDef="let element">{{element.productoStock}}</td>
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
         </ng-container>
 
         <ng-container matColumnDef="precio">
           <th mat-header-cell *matHeaderCellDef>PRECIO</th>
-<<<<<<< HEAD
           <!-- <td mat-cell *matCellDef="let element">{{element.productoPrecio}}</td> -->
           <td mat-cell 
             *matCellDef="let element" 
             [class.color-naranja]='element.productoStock < 5'
             [class.color-rojo]='element.productoStock == 0'
           >{{element.productoPrecio}}</td>
-=======
-          <td mat-cell *matCellDef="let element">{{element.productoPrecio}}</td>
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
         </ng-container>
 
         <ng-container matColumnDef="vencimiento">
           <th mat-header-cell *matHeaderCellDef>VENCIMIENTO</th>
-<<<<<<< HEAD
           <!-- <td mat-cell *matCellDef="let element">{{element.fechaVencimiento}}</td> -->
           <td mat-cell 
             *matCellDef="let element" 
             [class.color-naranja]='element.productoStock < 5'
             [class.color-rojo]='element.productoStock == 0'
           >{{element.fechaVencimiento}}</td>
-=======
-          <td mat-cell *matCellDef="let element">{{element.fechaVencimiento}}</td>
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
         </ng-container>
 
         <ng-container matColumnDef="acciones">
@@ -127,11 +102,7 @@
           <td class="mat-cell" colspan="9" align="center">No se encontraron datos ...</td>
         </tr>
       </table>
-<<<<<<< HEAD
       <mat-paginator [pageSizeOptions]="[10, 20, 50]"
-=======
-      <mat-paginator [pageSizeOptions]="[5, 10, 20]"
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
                      showFirstLastButtons
                      aria-label="Select page of periodic elements">
       </mat-paginator>

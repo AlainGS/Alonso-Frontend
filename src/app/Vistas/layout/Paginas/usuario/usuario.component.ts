@@ -6,13 +6,8 @@ import { MatPaginatorIntl } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
 
 import { ModalUsuarioComponent } from '../../Modales/modal-usuario/modal-usuario.component';
-<<<<<<< HEAD
 import { Usuario } from '../../../../Interfaces/usuario.model';
 import { UsuarioService } from '../../../../Servicios/usuario.service';
-=======
-import { UsuarioModel } from '../../../../Modelos/usuario.model';
-import { UsuarioService } from '../../../../Controladores/usuario.service';
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
 import { UtilidadService } from 'src/app/ZModulos/utilidad.service';
 import Swal from 'sweetalert2';
 
@@ -33,11 +28,7 @@ export class UsuarioComponent implements OnInit, AfterViewInit {
     'acciones'
   ];
   
-<<<<<<< HEAD
   dataInicio : Usuario[] = [];  
-=======
-  dataInicio : UsuarioModel[] = [];  
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
   dataListaUsuario = new MatTableDataSource(this.dataInicio);
   @ViewChild(MatPaginator) paginacionTabla!: MatPaginator;
 
@@ -102,11 +93,7 @@ export class UsuarioComponent implements OnInit, AfterViewInit {
       });
   }
 
-<<<<<<< HEAD
   editarUsuario( editarRegistro: Usuario ) {
-=======
-  editarUsuario( editarRegistro: UsuarioModel ) {
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
     const dialogRef = this.dialog
       .open(ModalUsuarioComponent, {
         disableClose: true,
@@ -120,11 +107,7 @@ export class UsuarioComponent implements OnInit, AfterViewInit {
     });
   }
 
-<<<<<<< HEAD
   eliminarUsuario(eliminarRegistro: Usuario) {
-=======
-  eliminarUsuario(eliminarRegistro: UsuarioModel) {
->>>>>>> ae69534d15a103bd57b4598153aab38fd98cbfba
 
     Swal.fire({
       title: "¿Desea eliminar el Usuario?",
