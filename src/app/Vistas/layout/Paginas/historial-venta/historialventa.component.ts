@@ -151,9 +151,7 @@ export class HistorialVentaComponent implements OnInit {
       },
       complete: () => {
       }
-    });
-
-    
+    });   
   }
 
   cargarListadoVentas() {
@@ -172,7 +170,5 @@ export class HistorialVentaComponent implements OnInit {
       complete: () => {
       }
     })
-  }
-
-  
+  }  
 }

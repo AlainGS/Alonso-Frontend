@@ -105,7 +105,6 @@ export class ModalProductoComponent implements OnInit {
         }
       })
 
-
     } //INSERTAR PRODUCTO
       else {
 
@@ -153,5 +152,4 @@ export class ModalProductoComponent implements OnInit {
       }
     })
   }
-
 }

@@ -126,7 +126,6 @@ export class VentaComponent implements OnInit{
       productoDescripcionF  : '',
       productoCantidadF     : ''
     })
-
   }
 
   eliminarProducto(detalle: DetalleVenta) {

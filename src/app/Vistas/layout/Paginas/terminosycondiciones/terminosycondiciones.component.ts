@@ -18,7 +18,5 @@ export class TerminosYCondicionesComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
   }
-
 }
