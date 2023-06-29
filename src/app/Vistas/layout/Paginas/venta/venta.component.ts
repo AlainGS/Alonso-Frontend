@@ -126,6 +126,8 @@ export class VentaComponent implements OnInit{
       productoDescripcionF  : '',
       productoCantidadF     : ''
     })
+
+    this.cargarDatosVenta;
   }
 
   eliminarProducto(detalle: DetalleVenta) {

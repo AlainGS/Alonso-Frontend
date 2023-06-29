@@ -21,8 +21,8 @@ export class UsuarioService {
     public iniciarSesion$ = (correo: string, clave: string) : Observable<PaqueteApi> => 
       this.httpCliente.get<PaqueteApi>(`${this.urlApi}/IniciarSesion?correo=${correo}&clave=${clave}`, {headers: { 'Content-Type': 'application/json' }});
   
-    public listarRegistros$ = (datos: any) : Observable<PaqueteApi> => 
-      this.httpCliente.post<PaqueteApi>(this.urlApi + '/Listado', datos, {headers: { 'Content-Type': 'application/json' }});
+    public listarRegistros$ = () : Observable<PaqueteApi> => 
+      this.httpCliente.get<PaqueteApi>(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
   
     public insertarRegistros$ = (datos: Usuario) : Observable<PaqueteApi> => 
       this.httpCliente.post<PaqueteApi>(this.urlApi, datos, {headers: { 'Content-Type': 'application/json' }});

@@ -4,8 +4,10 @@
 
 export const environment = {
   production: false,
-  api: 'https://farmaciagalumaapi.azurewebsites.net/api/'
-  // api: 'http://localhost:5000/api/'
+  // AZURE
+  //api: 'https://farmaciagalumaapi.azurewebsites.net/api/'
+  //LOCAL
+  api: 'http://localhost:5000/api/'
 };
 
 /*

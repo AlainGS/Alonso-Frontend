@@ -134,7 +134,7 @@ export class ModalUsuarioComponent implements OnInit, AfterViewInit {
 
   listarComboRol(){
     this.mostrarLoading = true;
-    this._rolServicio.listarRegistros$({}).subscribe({
+    this._rolServicio.listarRegistros$().subscribe({
       next: (data) => {
         if (data.estadoData) {
           this.listaRoles = data.cuerpoData;

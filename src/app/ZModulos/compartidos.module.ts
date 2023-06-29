@@ -37,6 +37,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 /*npm install moment --save | npm i @angular/material-moment-adapter*/
 import { MomentDateModule } from '@angular/material-moment-adapter'; 
 
+/* IBM ASSISTANT */
+//import { WatsonAssistantService } from '../Servicios/watson-assistant.service';
+
 @NgModule({
     declarations: [],
     imports: [
@@ -102,7 +105,9 @@ import { MomentDateModule } from '@angular/material-moment-adapter';
     ],
     providers: [
       MatDatepickerModule,
-      MatNativeDateModule
+      MatNativeDateModule,
+      
+      //WatsonAssistantService
     ]    
   })
   export class CompartidosModule { }

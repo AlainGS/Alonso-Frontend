@@ -16,7 +16,7 @@ export class ProductoService {
   constructor(private httpCliente: HttpClient) { }
 
   public listarRegistros$ = () : Observable<PaqueteApi> => 
-    this.httpCliente.post<PaqueteApi>(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
+    this.httpCliente.get<PaqueteApi>(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
 
   public insertarRegistros$ = (datos: Producto) : Observable<PaqueteApi> => 
     this.httpCliente.post<PaqueteApi>(this.urlApi, datos, {headers: { 'Content-Type': 'application/json' }});

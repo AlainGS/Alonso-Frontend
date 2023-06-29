@@ -14,5 +14,5 @@ export class BoletaService {
   constructor(private httpCliente: HttpClient) { }
 
   public ultimoNumero$ = () : Observable<any> => 
-    this.httpCliente.post(this.urlApi + '/UltimoNumero', {headers: { 'Content-Type': 'application/json' }});
+    this.httpCliente.get(this.urlApi + '/UltimoNumero', {headers: { 'Content-Type': 'application/json' }});
 }

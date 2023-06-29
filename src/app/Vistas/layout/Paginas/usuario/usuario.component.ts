@@ -61,7 +61,7 @@ export class UsuarioComponent implements OnInit, AfterViewInit {
 
   cargarListadoUsuarios() {
     this.mostrarLoading = true;
-    this._usuarioServicio.listarRegistros$({}).subscribe({
+    this._usuarioServicio.listarRegistros$().subscribe({
       next: (data) => {
         if(data.estadoData){
           this.dataListaUsuario.data = data.cuerpoData;

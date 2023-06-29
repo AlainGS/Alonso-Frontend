@@ -15,10 +15,10 @@ export class VentaService {
   constructor(private httpCliente: HttpClient) { }
 
   listarRegistros$ = () : Observable<PaqueteApi> => 
-    this.httpCliente.post<PaqueteApi>(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
+    this.httpCliente.get<PaqueteApi>(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
 
   listarRegistrosDetallados$ = () : Observable<PaqueteApi> => 
-    this.httpCliente.post<PaqueteApi>(this.urlApi + '/ListadoDetallado', {headers: { 'Content-Type': 'application/json' }});
+    this.httpCliente.get<PaqueteApi>(this.urlApi + '/ListadoDetallado', {headers: { 'Content-Type': 'application/json' }});
 
   insertarRegistros$ = (datos: Venta) : Observable<PaqueteApi> => 
     this.httpCliente.post<PaqueteApi>(this.urlApi, datos, {headers: { 'Content-Type': 'application/json' }});

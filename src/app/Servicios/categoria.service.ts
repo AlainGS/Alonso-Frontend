@@ -14,5 +14,5 @@ export class CategoriaService {
   constructor(private httpCliente: HttpClient) { }
 
   public listarRegistros$ = () : Observable<PaqueteApi> => 
-    this.httpCliente.post<PaqueteApi>(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
+    this.httpCliente.get<PaqueteApi>(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
 }

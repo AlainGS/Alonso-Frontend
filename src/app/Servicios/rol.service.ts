@@ -13,6 +13,6 @@ export class RolService {
 
   constructor(private httpCliente: HttpClient) { }
 
-  public listarRegistros$ = (datos: any) : Observable<any> => 
-    this.httpCliente.post(this.urlApi + '/Listado', datos, {headers: { 'Content-Type': 'application/json' }});
+  public listarRegistros$ = () : Observable<any> => 
+    this.httpCliente.get(this.urlApi + '/Listado', {headers: { 'Content-Type': 'application/json' }});
 }
