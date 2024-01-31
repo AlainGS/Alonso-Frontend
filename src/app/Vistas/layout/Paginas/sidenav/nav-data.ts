@@ -66,6 +66,11 @@ export const navbarData: INavbarData[] = [
         label: 'HISTORIAL DE VENTAS'
     },
     {
+        routeLink: 'radio',
+        icon: 'fal fa-history',
+        label: 'RADIO'
+    },
+    {
         routeLink: 'reportes',
         //icon: 'fal fa-chart-bar',
         icon: 'fal fa-clipboard-list',
