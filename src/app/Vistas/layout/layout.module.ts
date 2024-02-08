@@ -10,6 +10,7 @@ import { UsuarioComponent } from './Paginas/usuario/usuario.component';
 import { ProductoComponent } from './Paginas/producto/producto.component';
 import { VentaComponent } from './Paginas/venta/venta.component';
 import { HistorialVentaComponent } from './Paginas/historial-venta/historialventa.component';
+import { RadioComponent } from './Paginas/radio/radio.component';
 import { ReporteComponent } from './Paginas/reporte/reporte.component';
 
 //nuevos
@@ -48,7 +49,8 @@ import { TerminosYCondicionesComponent } from './Paginas/terminosycondiciones/te
     SidenavComponent,
     SublevelMenuComponent,
     FooterComponent,
-    BodyComponent
+    BodyComponent,
+    RadioComponent,
   ],
 
   imports: [

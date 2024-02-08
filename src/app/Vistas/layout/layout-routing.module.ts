@@ -10,6 +10,7 @@ import { ReporteComponent } from './Paginas/reporte/reporte.component';
 import { VentaComponent } from './Paginas/venta/venta.component';
 import { ContactenosComponent } from './Paginas/contactenos/contactenos.component';
 import { TerminosYCondicionesComponent } from './Paginas/terminosycondiciones/terminosycondiciones.component';
+import { RadioComponent } from './Paginas/radio/radio.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
       {path:'productos',component:ProductoComponent},
       {path:'ventas',component:VentaComponent},
       {path:'historial_ventas',component:HistorialVentaComponent},
+      {path:'radio',component:RadioComponent},
       {path:'reportes',component:ReporteComponent}
     ]
   }
